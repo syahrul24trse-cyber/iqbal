@@ -1,0 +1,167 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#60d394,#4fb3d8);
+height:100vh;
+overflow:hidden;
+}
+
+.container{
+display:flex;
+padding:40px;
+gap:20px;
+height:100vh;
+}
+
+.sidebar{
+width:90px;
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.menu-item{
+padding:25px 10px;
+text-align:center;
+cursor:pointer;
+border-bottom:1px solid #eee;
+}
+
+.menu-item i{
+display:block;
+font-size:20px;
+margin-bottom:10px;
+}
+
+.menu-item.active{
+color:#67c96d;
+}
+
+.profile-card{
+width:420px;
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.profile-header{
+height:420px;
+background:#eef1f4;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.profile{
+width:320px;
+}
+
+.profile-body{
+padding:30px;
+text-align:center;
+}
+
+.profile-body h1{
+font-size:45px;
+}
+
+.profile-body h3{
+color:#67c96d;
+margin-top:10px;
+}
+
+.social{
+margin-top:20px;
+}
+
+.social a{
+color:#333;
+font-size:22px;
+margin:0 8px;
+}
+
+.profile-footer{
+display:flex;
+}
+
+.profile-footer button{
+flex:1;
+padding:20px;
+border:none;
+background:white;
+border-top:1px solid #eee;
+cursor:pointer;
+}
+
+.content{
+flex:1;
+background:white;
+border-radius:15px;
+padding:40px;
+overflow-y:auto;
+}
+
+.section{
+display:none;
+}
+
+.section.active{
+display:block;
+}
+
+h2{
+color:#67c96d;
+margin-bottom:20px;
+}
+
+.info{
+margin-top:30px;
+}
+
+.info div{
+display:flex;
+justify-content:space-between;
+padding:15px 0;
+border-bottom:1px solid #eee;
+}
+
+.card{
+padding:20px;
+border:1px solid #eee;
+margin-bottom:20px;
+border-radius:10px;
+}
+
+.bar{
+height:10px;
+background:#eee;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.bar span{
+display:block;
+height:100%;
+background:#67c96d;
+border-radius:10px;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.project-card{
+padding:40px;
+border:1px solid #eee;
+border-radius:10px;
+text-align:center;
+}

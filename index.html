@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Syahrul Iqbal</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <div class="menu-item active" data-target="about">
+            <i class="fas fa-user"></i>
+            <span>ABOUT</span>
+        </div>
+
+        <div class="menu-item" data-target="resume">
+            <i class="fas fa-file-alt"></i>
+            <span>RESUME</span>
+        </div>
+
+        <div class="menu-item" data-target="project">
+            <i class="fas fa-code"></i>
+            <span>PROJECTS</span>
+        </div>
+
+        <div class="menu-item" data-target="contact">
+            <i class="fas fa-envelope"></i>
+            <span>CONTACT</span>
+        </div>
+
+    </div>
+
+    <!-- PROFILE -->
+
+    <div class="profile-card">
+
+        <div class="profile-header">
+
+            <img src="{{ url_for('static', filename='profile.png') }}" class="profile">
+
+        </div>
+
+        <div class="profile-body">
+
+            <h1>M. Syahrul Iqbal</h1>
+
+            <h3>D4 Teknologi Rekayasa Sistem Elektronika</h3>
+
+            <div class="social">
+
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="profile-footer">
+
+            <button>DOWNLOAD CV</button>
+            <button>CONTACT ME</button>
+
+        </div>
+
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="content">
+
+        <div class="section active" id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                Saya adalah mahasiswa D4 Teknologi Rekayasa Sistem Elektronika
+                Politeknik Caltex Riau yang memiliki minat pada bidang
+                IoT, Embedded System, Computer Vision,
+                Artificial Intelligence dan Web Development.
+            </p>
+
+            <div class="info">
+
+                <div><b>Kampus</b><span>Politeknik Caltex Riau</span></div>
+                <div><b>Status</b><span>Mahasiswa Aktif</span></div>
+                <div><b>Email</b><span>m.syahruliqbal775@gmail.com</span></div>
+                <div><b>LinkedIn</b><span>m.syahruliqbal</span></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="resume">
+
+            <h2>Resume</h2>
+
+            <div class="card">
+
+                <h3>Pendidikan</h3>
+
+                <p>2023 - Sekarang</p>
+
+                <p>Politeknik Caltex Riau</p>
+
+                <p>D4 Teknologi Rekayasa Sistem Elektronika</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Keahlian</h3>
+
+                <p>Python</p>
+                <div class="bar"><span style="width:90%"></span></div>
+
+                <p>ESP32</p>
+                <div class="bar"><span style="width:90%"></span></div>
+
+                <p>OpenCV</p>
+                <div class="bar"><span style="width:85%"></span></div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="project">
+
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    Robot Forklift Autonomous
+                </div>
+
+                <div class="project-card">
+                    Mesin Tetas Telur IoT
+                </div>
+
+                <div class="project-card">
+                    Sistem Jadwal Sholat
+                </div>
+
+                <div class="project-card">
+                    OpenCV Color Detection
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section" id="contact">
+
+            <h2>Contact</h2>
+
+            <p>Email : m.syahruliqbal775@gmail.com</p>
+
+            <p>LinkedIn : m.syahruliqbal</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
